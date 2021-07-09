@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "$(npm bin)/cypress run",
-    "cypress:open": "$(npm bin)/cypress open",
+    "cypress:open": "./node_modules/.bin/cypress open",
     "build": "tsc",
     "clean": "rimraf dist",
     "dev": "npm run clean && run-p dev:**",
