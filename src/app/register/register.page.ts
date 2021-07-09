@@ -7,19 +7,19 @@ export const registerPage = (error?: string) =>
     ${error ? `<p class="error">${error}</p>` : ''}
     <label id="name" class="mdc-text-field mdc-text-field--filled">
       <span class="mdc-text-field__ripple"></span>
-      <input required name="name" type="text" class="mdc-text-field__input" aria-labelledby="name">
+      <input required name="name" type="text" class="mdc-text-field__input" aria-labelledby="name" data-cy="name-registration">
       <span class="mdc-floating-label" id="my-label">Name</span>
       <span class="mdc-line-ripple"></span>
     </label>
     <label id="username" class="mdc-text-field mdc-text-field--filled">
       <span class="mdc-text-field__ripple"></span>
-      <input required name="emailAddress" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$" class="mdc-text-field__input" aria-labelledby="password">
+      <input required name="emailAddress" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$" class="mdc-text-field__input" aria-labelledby="password" data-cy="email-registration">
       <span class="mdc-floating-label" id="my-label">Email address</span>
       <span class="mdc-line-ripple"></span>
     </label>
     <label id="password" class="mdc-text-field mdc-text-field--filled">
       <span class="mdc-text-field__ripple"></span>
-      <input required name="password" type="password" class="mdc-text-field__input" aria-labelledby="email-address">
+      <input required name="password" type="password" class="mdc-text-field__input" aria-labelledby="email-address" data-cy="password-registration">
       <span class="mdc-floating-label" id="my-label">Password</span>
       <span class="mdc-line-ripple"></span>
     </label>
@@ -32,10 +32,10 @@ export const registerPage = (error?: string) =>
         </a>
       </div>
       <div id="login" class="mdc-touch-target-wrapper">
-        <button class="mdc-button mdc-button--raised">
+        <button class="mdc-button mdc-button--raised" data-cy="register">
           <span class="mdc-button__ripple"></span>
           <span class="mdc-button__touch"></span>
-          <span class="mdc-button__label">Regiister</span>
+          <span class="mdc-button__label">Register</span>
         </button>
       </div>
     </div>
